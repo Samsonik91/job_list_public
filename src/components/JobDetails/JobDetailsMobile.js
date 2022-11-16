@@ -63,12 +63,12 @@ const JobDetailsMobile = ({job}) => {
                 {job.benefits.map((b,i)=>
                     <div
                         key={i + Math.random()}
-                        className='flex items-center gap-4'
+                        className='flex items-center'
                     >
                         <FontAwesomeIcon
                             size='xs'
                             icon={faSquare}
-                            className='text-[#384564A1]'
+                            className='text-[#384564A1] mr-4'
                         />
                         <div className='font-Proxima400 text-[#38415DD1] text-[18px] leading-6 -tracking-[0.56px]'>{b}</div>
                     </div>
@@ -85,11 +85,11 @@ const JobDetailsMobile = ({job}) => {
             </div>
             <div className='w-full h-[1px] bg-[#3A4562] opacity-25 mb-3'></div>
             <div className='overflow-x-scroll mb-[55px]'>
-                <div className='flex items-center gap-2 w-[calc(600px+1rem)]'>
+                <div className='flex items-center w-[calc(600px+1rem)]'>
                     {job.pictures.map((p,i)=>
                         <div
                             key={i + Math.random()}
-                            className='w-[200px] h-[133px]'
+                            className='w-[200px] h-[133px] mr-2'
                         >
                             <img src={p} className='w-full h-full rounded-md object-cover'/>
                         </div>
@@ -103,24 +103,24 @@ const JobDetailsMobile = ({job}) => {
             <div className='font-Proxima400 text-[#38415DD1] text-[18px] leading-6 -tracking-[0.56px] mb-[10px]'>
                 Employment Type
             </div>
-            <div className='flex items-start flex-wrap gap-2 mb-[22px]'>
+            <div className='flex items-start flex-wrap mb-[22px]'>
                 {job.employment_type.map((j,i)=>
                     <div
                         key={i + Math.random()}
                         className='flex justify-center items-center border rounded-md border-[#55699E]
-                            font-Proxima700 text-[16px] text-[#55699E] bg-[#d0daf2] -tracking-[0.46px] py-4 px-6'
+                            font-Proxima700 text-[16px] text-[#55699E] bg-[#d0daf2] -tracking-[0.46px] py-4 px-6 mr-2'
                     >{j}</div>
                 )}
             </div>
             <div className='font-Proxima400 text-[#38415DD1] text-[18px] leading-6 -tracking-[0.56px] mb-[10px]'>
                 Benefits
             </div>
-            <div className='flex items-start flex-wrap gap-2 mb-[63px]'>
+            <div className='flex items-start flex-wrap mb-[63px]'>
                 {job.benefits.map((j,i)=>
                     <div
                         key={i + Math.random()}
                         className='flex justify-center items-center border rounded-md border-[#FFCF00]
-                            font-Proxima700 text-[16px] text-[#988B49] bg-[#f7eab5] py-4 px-4'
+                            font-Proxima700 text-[16px] text-[#988B49] bg-[#f7eab5] py-4 px-4 mr-2'
                     >{j}</div>
                 )}
             </div>
