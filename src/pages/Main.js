@@ -23,7 +23,7 @@ const Main = () => {
             <div className='hidden md:flex w-full flex-col items-center max-w-screen-lg gap-2 mb-12'>
                 {jobs.map((job,i)=> <JobItemDekstop key={job.id} job={job} rate={i%2 === 0 ? true : false}/>)}
             </div>
-            <div className='flex md:hidden w-full flex flex-col items-center gap-2 mb-[26px]'>
+            <div className='flex md:hidden w-full flex flex-col items-center mb-[26px]'>
                 {jobs.map(job=> <JobItemMobile key={job.id} job={job}/>)}
             </div>
             <Paginator/>
