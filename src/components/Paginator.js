@@ -77,16 +77,16 @@ const Paginator = () => {
                 className='mb-[2px] mr-2 md:mr-7 cursor-pointer hover:scale-125 rotate-90'
             />
             <div className='md:mr-[3.4rem] w-[1.5px] h-[31px] bg-[#DEE3EF]'></div>
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center'>
                 <div
                     style={{display: rightShow ? 'block' : 'none'}}
                     className='font-Proxima700 text-[16px] md:text-[21px] text-[#38415D9A] text-[#70778B]
                      leading-[19px] md:leading-6 tracking-[1.33px] md:tracking-[1.73px] cursor-pointer
-                      hover:scale-125'
+                      hover:scale-125 mr-3'
                     onClick={toStart}
                 >1</div>
                 <div style={{display: rightShow ? 'block' : 'none'}}>
-                    <FontAwesomeIcon icon={faEllipsis} className='-mb-[2px] md:-mb-1 text-[#70778B]'/>
+                    <FontAwesomeIcon icon={faEllipsis} className='-mb-[2px] md:-mb-1 mr-3 text-[#70778B]'/>
                 </div>
                 {items.map(i=>
                     i <= 18 &&
@@ -94,7 +94,7 @@ const Paginator = () => {
                         key={i}
                         className='font-Proxima700 text-[16px] md:text-[21px] text-[#38415D9A] md:text-[#70778B]
                          leading-[19px] md:leading-6 tracking-[1.33px] md:tracking-[1.73px] cursor-pointer
-                          hover:scale-125'
+                          hover:scale-125 mr-3'
                         style={{color: current === i ? '#1568ed' : '#70778B'}}
                         onClick={()=> setCurrent(i)}
                     >{i}</div>
@@ -102,7 +102,7 @@ const Paginator = () => {
                 <div style={{display: leftShow ? 'block' : 'none'}}>
                     <FontAwesomeIcon
                         icon={faEllipsis}
-                        className='-mb-[2px] md:-mb-1 text-[#70778B]'
+                        className='-mb-[2px] md:-mb-1 mr-3 text-[#70778B]'
                     />
                 </div>
                 <div
