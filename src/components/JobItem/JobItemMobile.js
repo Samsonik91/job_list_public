@@ -23,7 +23,7 @@ const JobItemMobile = ({job}) => {
     },[])
 
     return (
-        <div className='w-full flex justify-between bg-[#EFF0F5] rounded-[8px] p-4 pt-3 pb-7 gap-2'>
+        <div className='w-full flex justify-between bg-[#EFF0F5] rounded-[8px] p-4 pt-3 pb-7 mb-2'>
                 <div className='w-[66px] h-full mr-[19px] pt-[34px]'>
                     <img src={picture} className='w-full h-[66px] object-cover rounded-full'/>
                 </div>
@@ -43,29 +43,29 @@ const JobItemMobile = ({job}) => {
                         </div>
                     </div>
                     <div className='h-40 flex flex-col justify-between items-start'>
-                        <div className='flex flex-col items-start gap-1'>
+                        <div className='flex flex-col items-start'>
                             <Link to={`/${job.id}`}>
                                 <h3 className='font-Proxima400 text-[18px] leading-6 -tracking-[0.56px]
                                  text-[#3A4562] cursor-pointer'>
                                     {job.title}
                                 </h3>
                             </Link>
-                            <div className='flex gap-1 items-center text-[#878D9D] font-Proxima400 text-[16px]
+                            <div className='flex items-center text-[#878D9D] font-Proxima400 text-[16px] mt-1
                              leading-6 tracking-[0.23px]'>
-                                <div>
+                                <div className='mr-1'>
                                     Department name
                                 </div>
-                                <FontAwesomeIcon icon={faCircle} className='text-[0.25rem]'></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faCircle} className='text-[0.25rem] mr-1'></FontAwesomeIcon>
                                 <div>
                                     {job.name}
                                 </div>
                             </div>
                         </div>
-                        <div className='flex items-baseline gap-2 text-[#878D9D]'>
+                        <div className='flex items-baseline text-[#878D9D]'>
                             <div>
                                 <FontAwesomeIcon
                                     icon={faLocationDot}
-                                    className='w-[13px] h-[18px]'
+                                    className='w-[13px] h-[18px] mr-2'
                                 />
                             </div>
                             <div className='text-[#878D9D] font-Proxima400 text-[16px] leading-6 tracking-[0.23px]'>
