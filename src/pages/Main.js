@@ -15,7 +15,7 @@ const Main = () => {
         dispatch(getAllJobs())
     },[])
 
-    if(!jobs) return <div className='w-full h-full flex justify-center items-center'><Spinner/></div>
+    if(!jobs) return <Spinner/>
 
     return (
         <div className='w-full m-2 px-2 mx-auto lg:w-10/12 xl:w-4/5 xxl:w-3/5 mb-4 md:px-6 md:mt-6 md:mb-6
