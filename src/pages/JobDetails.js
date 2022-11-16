@@ -24,7 +24,7 @@ const JobDetails = () => {
         }
     },[jobs])
 
-    if(!jobs) return <div className='w-full h-full flex justify-center items-center'><Spinner/></div>
+    if(!jobs) return <Spinner/>
 
     return (
         <>
